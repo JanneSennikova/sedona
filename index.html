@@ -3,46 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <title>Sedona</title>
+    <link href='https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+    <link href="css/css.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 </head>
 <body>
 
 <header>
     <div class="container clearfix">
-        <nav class="lef_navigation">
-             <ul>
-                 <li>
-                     <a href="#"></a>
-                 </li>
-                 <li>
-                     <a href="#"></a>
-                 </li>
-             </ul>
-        </nav>
-        <div class="logo_smoll">
-            <img src="http://placehold.it/50x50" alt="sedona logo "/>
+        <div class="navi">
+            <nav class="lef_navigation">
+                <ul>
+                    <li>
+                        <a href="#">Информация</a>
+                    </li>
+                    <li>
+                        <a href="#">Фото и видео</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="logo_smoll">
+                <img src="img/logo.png" alt="sedona logo "/>
+            </div>
+            <nav class="right_navigation">
+                <ul>
+                    <li>
+                        <a href="#">Карта штата</a>
+                    </li>
+                    <li>
+                        <a href="#">Гостиницы</a>
+                    </li>
+                </ul>
+            </nav>
         </div>
-        <nav class="right_navigation">
-             <ul>
-                 <li>
-                     <a href="#"></a>
-                 </li>
-                 <li>
-                     <a href="#"></a>
-                 </li>
-             </ul>
-        </nav>
     </div>
 </header>
 
 <main class="container">
     <div class="logo">
-        <img src="http://placehold.it/600x200" width="600" alt="Седона небольшой городок в аризоне заслуживающий большего" />
+        <img src="img/sedona_index_logo.png" width="600" alt="Седона небольшой городок в аризоне заслуживающий большего" />
     </div>
     <div class="slogan">
         <h1>Седона небольшой городок в аризоне<br />
             заслуживающий большего</h1>
         <p class="slogan_description">
-
+            Рассмотрим 5 причин, по которым Седона круче чем гранд каньон!
         </p>
     </div>
     <section class="main_fact">
@@ -51,31 +56,39 @@
                 городок
             </div>
             <p class="fact_numder"> -№1-</p>
-            <p>description</p>
+            <p>Седона не атракцион <br />
+                для туристов, там течет <br />
+                своя жизнь</p>
         </div>
     </section>
     <seaction class="features_row clearfix">
         <div class="features_item">
-            <i class="features_home"></i>
+            <img src="img/home.png"></img>
             <h2>Жильё</h2>
             <p class="features_description">
-                <br />
+                Рекомендуем пожить в <br />
+                настоящем мотеле, все <br />
+                как в кино!
 
             </p>
         </div>
         <div class="features_item">
-            <i class="features_food"></i>
+            <img src="img/food.png"></img>
             <h2>Еда</h2>
             <p class="features_description">
-                <br />
+                Всегда заказывай <br />
+                ФИРМЕННЫЙ БУРГЕР,<br />
+                Вы НЕ разочаруетесь!
 
             </p>
         </div>
         <div class="features_item">
-            <i class="features_gift"></i>
+            <img src="img/gift.png"></img>
             <h2>Сувениры</h2>
             <p class="features_description">
-                <br />
+               Не только китайского, <br />
+                но и местного <br />
+                производства!
 
             </p>
         </div>
@@ -86,7 +99,9 @@
                 мост дьявола
             </div>
             <p class="fact_numder"> -№2-</p>
-            <p>description</p>
+            <p>Да, по нему можно <br />
+                пройти! Если конечно <br />
+                Вы осмелитесь</p>
         </div>
     </section>
     <seaction class="facts_row clearfix">
@@ -95,7 +110,9 @@
                 площадь
             </div>
             <p class="fact_numder"> -№3-</p>
-            <p>description</p>
+            <p>Все достопримеча-<br />
+                тельности находятся <br />
+                очень близко</p>
 
         </div>
         <div class="fact">
@@ -103,7 +120,9 @@
                 дорога
             </div>
             <p class="fact_numder"> -№4-</p>
-            <p>description</p>
+            <p>Ехать в Седону из<br />
+                Лас-Вегаса совсем <br />
+                не скучно!</p>
 
         </div>
         <div class="fact">
@@ -111,7 +130,9 @@
                 туристов
             </div>
             <p class="fact_numder"> -№5-</p>
-            <p>description</p>
+            <p>Большинство едет в <br />
+                гранд каньон и<br />
+                толпится там</p>
         </div>
     </seaction>
     <section class="interested">
@@ -119,9 +140,9 @@
             Заинтересовались??
         </div>
         <p class="interested_description">
-
+            Укажите предполагаемые даты поездки
             <br />
-
+            и мы покажем вам лучшие предложения гостиниц в Седоне
         </p>
         <form class="book" action="/" method="get">
             <fieldset>
@@ -140,26 +161,32 @@
 <footer>
      <div class="container">
          <div class="copyright">
-             VISITSEDONA
+             #VISITSEDONA
          </div>
             <div class="social">
                 <div class="social_icon">
+                    <div class="soc_button">
+                        <a href="#">
+                            <i class="fa fa-twitter"></i>
+                        </a>
+                    </div>
+                    <div class="soc_button">
                     <a href="#">
-                        <img src="http://placehold.it/40x40" alt="tv" class="footer_soc_icon" />
+                        <i class="fa fa-facebook"></i>
                     </a>
+                    </div>
+                    <div class="soc_button">
                     <a href="#">
-                        <img src="http://placehold.it/40x40" alt="fb" class="footer_soc_icon" />
+                        <i class="fa fa-youtube-play"></i>
                     </a>
-                    <a href="#">
-                        <img src="http://placehold.it/40x40" alt=" " class="footer_soc_icon" />
-                    </a>
+                    </div>
                 </div>
                 <div class="developed">
-                    <div class="developed title">
-                        WEBSITE BY
+                    <div class="developed_title">
+                        Website by
                     </div>
                     <div class="logo_developed">
-                        <img src="http://placehold.it/40x40" alt="HTML ACADEMY" class="logo_developed" />
+                        <img src="img/htmlacademy.png" alt="HTML ACADEMY" class="logo_developed" />
                     </div>
                 </div>
             </div>

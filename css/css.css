@@ -1,0 +1,147 @@
+body{
+    font-family: "PT Sans";
+    font-size: 14px;
+}
+.navi {
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.navi a {
+    text-decoration: none;
+    color: black;
+}
+.navi li {
+    list-style-type: none;
+}
+.slogan h1 {
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 21px;
+}
+.slogan_description {
+    text-transform: uppercase;
+}
+.fact {
+   text-transform: uppercase;
+}
+.fact_title {
+    font-size: 21px;
+    font-weight: 700;
+}
+.features_item {
+    text-transform: uppercase;
+}
+.features_item h2 {
+    font-size: 21px;
+}
+.interested {
+    text-transform: uppercase;
+}
+.interested_titled {
+    font-size: 30px;
+    font-weight: 700;
+}
+.book {
+    font-weight: 700;
+}
+.book legend{
+    font-size: 21px;
+    font-weight: 700;
+}
+.book input{
+    font-weight: 700;
+}
+.book a {
+    color: white;
+    font-size: 21px;
+    font-weight: 700;
+    text-decoration: none;
+}
+.hotel_serch_button {
+    background-color: #81b3d2;
+}
+.copyright {
+    font-size: 21px;
+    font-weight: 700;
+}
+.soc_button {
+    width: 56px;
+    height: 46px;
+    background-color: #81b3d2;
+    padding-top: 16px;
+    margin-right: 7px;
+    text-align: center;
+    align-content: center;
+    font-size: 21px;
+
+}
+.social_icon a{
+    color: white;
+    text-decoration: none;
+
+}
+.developed_title {
+    text-transform: uppercase;
+}
+.search_form{
+    text-transform: uppercase;
+    font-size: 14px;
+    background: silver;
+}
+.search_form legend {
+    font-size: 16px;
+    font-weight: 700;
+}
+.show_result_button {
+    width: 139px;
+    height: 38px;
+    border: 1px solid #ffffff;
+    text-align: center;
+    padding-top: 14px;
+}
+.show_result_button a {
+    text-decoration: none;
+    color: #ffffff;
+}
+.header_result {
+    font-size: 12px;
+}
+.header_result strong {
+    font-size: 21px;
+    font-weight: 700;
+}
+
+.header_result a {
+    color: #cacaca;
+    text-decoration: none;
+}
+a.active {
+    color: #81b3d2;
+    text-decoration: none;
+}
+.header_result li {
+    list-style-type: none;
+}
+.result_description {
+    font-size: 14px;
+    color: #333333;
+    text-transform: uppercase;
+}
+.result_description h3 {
+    font-size: 21px;
+    font-weight: 700;
+    color: #000000;
+}
+.fa-star {
+    color: #81b3d2;
+}
+a.button_detail  {
+    background-color: #81b3d2;
+    color: #ffffff;
+    text-decoration: none;
+}
+a.button_book {
+    background-color: #766357;
+    color: #ffffff;
+    text-decoration: none;
+}

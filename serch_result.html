@@ -3,143 +3,177 @@
 <head>
     <meta charset="UTF-8">
     <title>Sedona</title>
+    <link href='https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+    <link href="css/css.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 </head>
 <body>
 
 <header>
     <div class="container clearfix">
-        <nav class="main_navigation">
-             <ul>
-                 <li>
-                     <a href="#"></a>
-                 </li>
-                 <li>
-                     <a href="#"></a>
-                 </li>
-                 <li>
-                     <a href="#"></a>
-                 </li>
-                 <li>
-                     <a href="#"></a>
-                 </li>
-             </ul>
-        </nav>
+        <div class="navi">
+            <nav class="lef_navigation">
+                <ul>
+                    <li>
+                        <a href="#">Информация</a>
+                    </li>
+                    <li>
+                        <a href="#">Фото и видео</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="logo_smoll">
+                <img src="img/logo.png" alt="sedona logo "/>
+            </div>
+            <nav class="right_navigation">
+                <ul>
+                    <li>
+                        <a href="#">Карта штата</a>
+                    </li>
+                    <li>
+                        <a href="#">Гостиницы</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
     </div>
 </header>
 
 <main class="container">
     <form class="search_form" name="search_form">
         <fieldset>
-            <legend>ИНФРАСТРУКТУРА</legend>
-            <label for="pool">БАССЕЙН</label><input type="checkbox" id="pool" checked>
-            <label for="2"></label><input type="checkbox" id="2">
-            <label for="3"></label><input type="checkbox" id="3">
+            <legend>Инфраструктура:</legend>
+            <label for="pool">Бассейн</label><input type="checkbox" id="pool" checked>
+            <label for="parking">Парковка</label><input type="checkbox" id="parking">
+            <label for="wifi">WiFi</label><input type="checkbox" id="wifi">
         </fieldset>
         <fieldset>
-            <legend>ТИП ЖИЛЬЯ</legend>
-            <label for="hotel">ГОСТИНИЦА</label><input type="checkbox" id="hotel" checked>
-            <label for="motel">МОТЕЛЬ</label><input type="checkbox" id="motel" checked>
-            <label for="apartments">АПАРТАМЕНТЫ</label><input type="checkbox" id="apartments" checked>
+            <legend>Тип жилья:</legend>
+            <label for="hotel">Гостиница</label><input type="checkbox" id="hotel" checked>
+            <label for="motel">Мотель</label><input type="checkbox" id="motel" checked>
+            <label for="apartments">Аапартаменты</label><input type="checkbox" id="apartments" checked>
         </fieldset>
         <fieldset>
-            <legend>СТОИМОСТЬ В СУТКИ</legend>
-            <label for="from">ОТ</label><input type="number" id="from">
-            <label for="to">ДО</label><input type="number" id="to">
+            <legend>Стоимость в сутки (р):</legend>
+            <label for="from">От</label><input type="number" id="from">
+            <label for="to">До</label><input type="number" id="to">
             <div class="price_roller">
 
             </div>
-            <a class="show_result_button" href="#">ПОКАЗАТЬ</a>
+            <div class="show_result_button">
+            <a href="#">Показать</a>
+            </div>
         </fieldset>
     </form>
     <div class="header_result">
-        <strong>НАЙДЕНО: 3</strong>
+        <strong>Ннайдено: 3</strong>
 
         <ul class="sorting">
-            <title>СОРТИРОВКА</title>
+            <title>Сортировка:</title>
             <li>
-                <a class="active" href="#"></a>
+                <a  href="#" class="active">По цене</a>
             </li>
             <li>
-                <a href="#"></a>
+                <a href="#">По типу</a>
             </li>
             <li>
-                <a href="#"></a>
+                <a href="#">По рейтингу</a>
             </li>
         </ul>
     </div>
     <article class="result">
         <div class="result_img">
-            <img src="http://placehold.it/100x70" alt=" "  />
+            <img src="img/Amara_Resort_Spa.jpg" alt=" "  />
         </div>
         <div class="result_description">
-            <h3>HOTTEL_NAME</h3>
-            <p class="hotel_type">hotel_type</p>
-            <p class="cost"></p>
+            <h3>Amara resort & spa</h3>
+            <p class="hotel_type">Гостиница</p>
+            <p class="cost">от 3500 р.</p>
             <a class="button_detail" href="#">ПОДРОБНЕЕ</a>
-            <a class="button_book">ЗАБРОНИРОВАТЬ</a>
+            <a class="button_book" href="#">ЗАБРОНИРОВАТЬ</a>
         </div>
         <div class="hotel_ratings">
-            <img class="rating_stars" src="http://placehold.it/15x60">
-            <span>РЕЙТИНГ ОТЕЛЯ</span>
+            <div class="stars">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+            </div>
+            <span>Рейтинг: 8,5</span>
         </div>
     </article>
     <article class="result">
         <div class="result_img">
-            <img src="http://placehold.it/100x70" alt=" "  />
+            <img src="img/DESERT_QUAIL_INN.jpg" alt=" "  />
         </div>
         <div class="result_description">
-            <h3>HOTTEL_NAME</h3>
-            <p class="hotel_type">hotel_type</p>
-            <p class="cost"></p>
+            <h3>Desert quail inn</h3>
+            <p class="hotel_type">Мотель</p>
+            <p class="cost">от 2000 р.</p>
             <a class="button_detail" href="#">ПОДРОБНЕЕ</a>
-            <a class="button_book">ЗАБРОНИРОВАТЬ</a>
+            <a class="button_book" href="#">ЗАБРОНИРОВАТЬ</a>
         </div>
         <div class="hotel_ratings">
-            <img class="rating_stars" src="http://placehold.it/15x60">
-            <span>РЕЙТИНГ ОТЕЛЯ</span>
+            <div class="stars">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+            </div>
+            <span>Рейтинг: 8,5</span>
         </div>
     </article>
     <article class="result">
         <div class="result_img">
-            <img src="http://placehold.it/100x70" alt=" "  />
+            <img src="img/VILLAS_AT_POCO_DIABOLO.jpg" alt=" "  />
         </div>
         <div class="result_description">
-            <h3>HOTTEL_NAME</h3>
-            <p class="hotel_type">hotel_type</p>
-            <p class="cost"></p>
+            <h3>Villas at poco diabolo</h3>
+            <p class="hotel_type">Апартаменты</p>
+            <p class="cost">от 4000 р.</p>
             <a class="button_detail" href="#">ПОДРОБНЕЕ</a>
-            <a class="button_book">ЗАБРОНИРОВАТЬ</a>
+            <a class="button_book" href="#">ЗАБРОНИРОВАТЬ</a>
         </div>
         <div class="hotel_ratings">
-            <img class="rating_stars" src="http://placehold.it/15x60">
-            <span>РЕЙТИНГ ОТЕЛЯ</span>
+            <div class="stars">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+
+            </div>
+            <span>Рейтинг: 8,5</span>
         </div>
     </article>
 </main>
 
+
 <footer>
      <div class="container">
          <div class="copyright">
-             VISITSEDONA
+             #VISITSEDONA
          </div>
             <div class="social">
                 <div class="social_icon">
+                    <div class="soc_button">
+                        <a href="#">
+                            <i class="fa fa-twitter"></i>
+                        </a>
+                    </div>
+                    <div class="soc_button">
                     <a href="#">
-                        <img src="http://placehold.it/40x40" alt="tv" class="footer_soc_icon" />
+                        <i class="fa fa-facebook"></i>
                     </a>
+                    </div>
+                    <div class="soc_button">
                     <a href="#">
-                        <img src="http://placehold.it/40x40" alt="fb" class="footer_soc_icon" />
+                        <i class="fa fa-youtube-play"></i>
                     </a>
-                    <a href="#">
-                        <img src="http://placehold.it/40x40" alt=" " class="footer_soc_icon" />
-                    </a>
+                    </div>
                 </div>
                 <div class="developed">
-                    <div class="developed title">
-                        WEBSITE BY
+                    <div class="developed_title">
+                        Website by
                     </div>
                     <div class="logo_developed">
-                        <img src="http://placehold.it/40x40" alt="HTML ACADEMY" class="logo_developed" />
+                        <img src="img/htmlacademy.png" alt="HTML ACADEMY" class="logo_developed" />
                     </div>
                 </div>
             </div>
