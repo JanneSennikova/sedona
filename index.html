@@ -10,8 +10,8 @@
 <body>
 
 <header>
-    <div class="container clearfix">
-        <div class="navi">
+    <div class="container intro_logo clearfix">
+        <div class="navi clearfix">
             <nav class="lef_navigation">
                 <ul>
                     <li>
@@ -36,13 +36,17 @@
                 </ul>
             </nav>
         </div>
+        <div class="intro">
+            <div class="welcome"><img src="img/welcom.png" /></div>
+            <div class="gorgeus"><img src="img/gorgeous.png" /> </div>
+            <div class="sedona"><img src="img/sedona.png" /></div>
+            <div  class="sucks"><img src="img/sucks.png" /></div>
+        </div>
+        <div class="mask"></div>
     </div>
 </header>
 
 <main class="container">
-    <div class="logo">
-        <img src="img/sedona_index_logo.png" width="600" alt="Седона небольшой городок в аризоне заслуживающий большего" />
-    </div>
     <div class="slogan">
         <h1>Седона небольшой городок в аризоне<br />
             заслуживающий большего</h1>
@@ -50,8 +54,8 @@
             Рассмотрим 5 причин, по которым Седона круче чем гранд каньон!
         </p>
     </div>
-    <section class="main_fact">
-        <div class="fact">
+    <section class="main_fact_city clearfix">
+        <div class="fact_city">
             <div class="fact_title">Натоящий<br />
                 городок
             </div>
@@ -63,7 +67,7 @@
     </section>
     <seaction class="features_row clearfix">
         <div class="features_item">
-            <img src="img/home.png"></img>
+            <img src="img/home.png" />
             <h2>Жильё</h2>
             <p class="features_description">
                 Рекомендуем пожить в <br />
@@ -73,7 +77,7 @@
             </p>
         </div>
         <div class="features_item">
-            <img src="img/food.png"></img>
+            <img src="img/food.png" />
             <h2>Еда</h2>
             <p class="features_description">
                 Всегда заказывай <br />
@@ -83,18 +87,17 @@
             </p>
         </div>
         <div class="features_item">
-            <img src="img/gift.png"></img>
+            <img src="img/gift.png" />
             <h2>Сувениры</h2>
             <p class="features_description">
                Не только китайского, <br />
                 но и местного <br />
                 производства!
-
             </p>
         </div>
     </seaction>
-    <section class="main_fact">
-        <div class="fact">
+    <section class="main_fact_bridge clearfix">
+        <div class="fact_bridge">
             <div class="fact_title">Там есть<br />
                 мост дьявола
             </div>
@@ -104,28 +107,28 @@
                 Вы осмелитесь</p>
         </div>
     </section>
-    <seaction class="facts_row clearfix">
-        <div class="fact">
+    <seaction class="features_row clearfix">
+        <div class="features_item">
             <div class="fact_title">Небольшая <br />
                 площадь
             </div>
             <p class="fact_numder"> -№3-</p>
             <p>Все достопримеча-<br />
                 тельности находятся <br />
-                очень близко</p>
-
+                очень близко
+            </p>
         </div>
-        <div class="fact">
+        <div class="features_item">
             <div class="fact_title">Красивая дорога <br />
                 дорога
             </div>
             <p class="fact_numder"> -№4-</p>
             <p>Ехать в Седону из<br />
                 Лас-Вегаса совсем <br />
-                не скучно!</p>
-
+                не скучно!
+            </p>
         </div>
-        <div class="fact">
+        <div class="features_item">
             <div class="fact_title">Мало<br />
                 туристов
             </div>
@@ -147,10 +150,21 @@
         <form class="book" action="/" method="get">
             <fieldset>
                 <legend class="book_legend">Гостиницы в Седоне</legend>
-                <label for="check_in">Дата заезда</label><input type="date" id="check_in">
-                <label for="check_out">Дата выезда</label><input type="date" id="check_out">
-                <label for="older">Взрослые</label><input type="number" id="older">
-                <label for="child">Дети</label><input type="number" id="child">
+                <div class="field">
+                    <label for="check_in">Дата заезда:</label><input type="date" id="check_in">
+                </div>
+                <div class="field">
+                    <label for="check_out">Дата выезда:</label><input type="date" id="check_out">
+                </div>
+                <div class="field">
+                    <div class="old">
+                    <label for="older">Взрослые:</label><input type="number" id="older">
+                    </div>
+                    <div class="chil">
+                    <label for="child">Дети:</label><input type="number" id="child">
+                    </div>
+                </div>
+
                 <a class="hotel_serch_button" href="#">Найти</a>
             </fieldset>
 
@@ -163,7 +177,7 @@
          <div class="copyright">
              #VISITSEDONA
          </div>
-            <div class="social">
+         <div class="social">
                 <div class="social_icon">
                     <div class="soc_button">
                         <a href="#">
@@ -181,16 +195,13 @@
                     </a>
                     </div>
                 </div>
-                <div class="developed">
-                    <div class="developed_title">
-                        Website by
-                    </div>
-                    <div class="logo_developed">
-                        <img src="img/htmlacademy.png" alt="HTML ACADEMY" class="logo_developed" />
-                    </div>
-                </div>
             </div>
-        </div>
+         <div class="developed">
+             <div class="developed_title">
+                 Website by <img src="img/htmlacademy.png" alt="HTML ACADEMY" class="logo_developed" align="middle" hspace="5" />
+             </div>
+         </div>
+     </div>
 </footer>
 
 </body>
