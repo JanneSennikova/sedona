@@ -447,6 +447,8 @@ a.active {
     outline: 1px solid slateblue;
 }
 .result_img {
+    max-width: 135px;
+    max-height: 90px;
     float: left;
     margin-right: 30px;
 }
