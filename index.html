@@ -5,17 +5,18 @@
     <title>Sedona</title>
     <link href='https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
     <link href="css/css.css" rel="stylesheet" type="text/css">
+    <link href="css/normalize.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 </head>
 <body>
 
-<header>
-    <div class="container intro_logo clearfix">
+<header class="intro_logo">
+    <div class="container clearfix">
         <div class="navi clearfix">
             <nav class="lef_navigation">
                 <ul>
                     <li>
-                        <a href="#">Информация</a>
+                        <a href="#" class="active">Информация</a>
                     </li>
                     <li>
                         <a href="#">Фото и видео</a>
@@ -42,11 +43,11 @@
             <div class="sedona"><img src="img/sedona.png" /></div>
             <div  class="sucks"><img src="img/sucks.png" /></div>
         </div>
-        <div class="mask"></div>
     </div>
+    <div class="mask"></div>
 </header>
 
-<main class="container">
+<main>
     <div class="slogan">
         <h1>Седона небольшой городок в аризоне<br />
             заслуживающий большего</h1>
@@ -108,7 +109,7 @@
         </div>
     </section>
     <seaction class="features_row clearfix">
-        <div class="features_item">
+        <div class="features_item_bottom">
             <div class="fact_title">Небольшая <br />
                 площадь
             </div>
@@ -118,7 +119,7 @@
                 очень близко
             </p>
         </div>
-        <div class="features_item">
+        <div class="features_item_bottom">
             <div class="fact_title">Красивая дорога <br />
                 дорога
             </div>
@@ -128,7 +129,7 @@
                 не скучно!
             </p>
         </div>
-        <div class="features_item">
+        <div class="features_item_bottom">
             <div class="fact_title">Мало<br />
                 туристов
             </div>
@@ -147,7 +148,9 @@
             <br />
             и мы покажем вам лучшие предложения гостиниц в Седоне
         </p>
+         <div class="map"></div>
         <form class="book" action="/" method="get">
+
             <fieldset>
                 <legend class="book_legend">Гостиницы в Седоне</legend>
                 <div class="field">
@@ -169,8 +172,10 @@
             </fieldset>
 
         </form>
+
     </section>
 </main>
+
 
 <footer>
      <div class="container">
@@ -179,27 +184,24 @@
          </div>
          <div class="social">
                 <div class="social_icon">
-                    <div class="soc_button">
-                        <a href="#">
+
+                        <a href="#" class="soc_button">
                             <i class="fa fa-twitter"></i>
                         </a>
-                    </div>
-                    <div class="soc_button">
-                    <a href="#">
+                    <a href="#" class="soc_button">
                         <i class="fa fa-facebook"></i>
                     </a>
-                    </div>
-                    <div class="soc_button">
-                    <a href="#">
+                    <a href="#" class="soc_button">
                         <i class="fa fa-youtube-play"></i>
                     </a>
-                    </div>
                 </div>
             </div>
-         <div class="developed">
+         <div class="developed clearfix">
              <div class="developed_title">
-                 Website by <img src="img/htmlacademy.png" alt="HTML ACADEMY" class="logo_developed" align="middle" hspace="5" />
+                 Website by
+                 <!--img src="img/htmlacademy.png" alt="HTML ACADEMY" class="logo_developed" align="middle" hspace="5" /-->
              </div>
+             <a href="https://htmlacademy.ru/" class="developed_ico"></a>
          </div>
      </div>
 </footer>
