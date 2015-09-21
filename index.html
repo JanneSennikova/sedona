@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 </head>
 <body>
-
+<div class="centrovsik">
 <header class="intro_logo">
     <div class="container clearfix">
         <div class="navi clearfix">
@@ -108,7 +108,8 @@
                 Вы осмелитесь</p>
         </div>
     </section>
-    <seaction class="features_row clearfix">
+    <seaction class="features_row_bottom clearfix">
+    <div class="features_row_bottom clearfix">
         <div class="features_item_bottom">
             <div class="fact_title">Небольшая <br />
                 площадь
@@ -138,6 +139,7 @@
                 гранд каньон и<br />
                 толпится там</p>
         </div>
+    </div>
     </seaction>
     <section class="interested">
         <div class="interested_titled">
@@ -150,9 +152,9 @@
         </p>
          <div class="map"></div>
         <form class="book" action="/" method="get">
+            <legend class="book_legend">Гостиницы в Седоне</legend>
+            <fieldset class="form_book">
 
-            <fieldset>
-                <legend class="book_legend">Гостиницы в Седоне</legend>
                 <div class="field">
                     <label for="check_in">Дата заезда:</label><input type="date" id="check_in">
                 </div>
@@ -205,6 +207,19 @@
          </div>
      </div>
 </footer>
+</div>
 
+
+<script>
+      var link = document.querySelector(".book_legend");
+      var book_form = document.querySelector(".form_book");
+      var mapOpen = document.querySelector(".map");
+
+      link.addEventListener("click", function(event) {
+          event.preventDefault();
+          book_form.classList.add("form_book_show");
+          mapOpen.classList.add("map_show");
+      });
+    </script>
 </body>
 </html>

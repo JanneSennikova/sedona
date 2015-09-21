@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 </head>
 <body>
-
+<div class="centrovsik">
 <header>
     <div class="intro_search clearfix">
         <div class="navi clearfix">
@@ -70,12 +70,16 @@
         <fieldset>
             <legend>Стоимость в сутки (р):</legend>
             <div class="cost_form">
-                <label for="from">От:</label><input type="number" id="from" placeholder="0">|
-                <label for="to">До:</label><input type="number" id="to" placeholder="3000">
+                <label for="from">От:</label><input type="number" id="from" value="0" class="bord">
+                <label for="to">До:</label><input type="number" id="to" value="3000">
             </div>
-            <div class="price_roller">
-
-            </div>
+                <div class="range-controls">
+                    <div class="scale">
+                        <div class="bar"></div>
+                    </div>
+                    <div class="toggle toggle-min"></div>
+                    <div class="toggle toggle-max"></div>
+                </div>
             <a href="#" class="show_result_button">Показать</a>
         </fieldset>
     </form></div>
@@ -99,6 +103,14 @@
                 </li>
             </ul>
         </div>
+        <div class="sort">
+            <a href="#"><i class="icon-up-dir"></i>
+            </a>
+            <!--div class="act"-->
+            <a href="#" class="act"><i class="icon-down-dir"></i>
+            </a>
+            <!--/div-->
+        </div>
     </div>
         <div class="single-line"></div>
         <article class="result clearfix">
@@ -106,7 +118,9 @@
                 <img src="img/Amara_Resort_Spa.jpg"  width="100%" alt=" "  />
             </div>
             <div class="result_description clearfix">
-                <h3>Amara resort & spa</h3>
+                <a href="#">
+                    <h3>Amara resort & spa</h3>
+                </a>
                 <p class="hotel_type">Гостиница</p>
                 <p class="cost">от 3500 р.</p>
                 <div>
@@ -130,7 +144,9 @@
                 <img src="img/DESERT_QUAIL_INN.jpg" width="100%" alt=" "  />
             </div>
             <div class="result_description">
-                <h3>Desert quail inn</h3>
+                <a href="#">
+                    <h3>Desert quail inn</h3>
+                </a>
                 <p class="hotel_type">Мотель</p>
                 <p class="cost">от 2000 р.</p>
                 <div>
@@ -152,7 +168,9 @@
                 <img src="img/VILLAS_AT_POCO_DIABOLO.jpg" width="100%" alt=" "  />
             </div>
             <div class="result_description">
-                <h3>Villas at poco diabolo</h3>
+                <a href="#">
+                    <h3>Villas at poco diabolo</h3>
+                </a>
                 <p class="hotel_type">Апартаменты</p>
                 <p class="cost">от 4000 р.</p>
                 <div>
@@ -171,7 +189,6 @@
         </article>
         <div class="single-line"></div>
 </main>
-
 
 <footer>
      <div class="container">
@@ -201,6 +218,6 @@
          </div>
      </div>
 </footer>
-
+</div>
 </body>
 </html>
