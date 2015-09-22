@@ -51,24 +51,24 @@
   /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
 }
 
-.icon-facebook:before { content: '\66'; } /* 'f' */
-.icon-twitter:before { content: '\74'; } /* 't' */
-.icon-up-dir:before { content: '\25b2'; } /* '?' */
-.icon-down-dir:before { content: '\25bc'; } /* '?' */
-.icon-star:before { content: '\2605'; } /* '?' */
-.icon-check-off:before { content: '\2610'; } /* '?' */
-.icon-check-on:before { content: '\2611'; } /* '?' */
-.icon-calendar:before { content: '\e800'; } /* '?' */
-.icon-plus:before { content: '\e801'; } /* '?' */
-.icon-minus:before { content: '\e802'; } /* '?' */
-.icon-youtube:before { content: '\f39e'; } /* '?' */
+.icon_facebook:before { content: '\66'; } /* 'f' */
+.icon_twitter:before { content: '\74'; } /* 't' */
+.icon_up_dir:before { content: '\25b2'; } /* '?' */
+.icon_down_dir:before { content: '\25bc'; } /* '?' */
+.icon_star:before { content: '\2605'; } /* '?' */
+.icon_check_off:before { content: '\2610'; } /* '?' */
+.icon_check_on:before { content: '\2611'; } /* '?' */
+.icon_calendar:before { content: '\e800'; } /* '?' */
+.icon_plus:before { content: '\e801'; } /* '?' */
+.icon_minus:before { content: '\e802'; } /* '?' */
+.icon_youtube:before { content: '\f39e'; } /* '?' */
 /* END ICONFONT */
 
 /* MAIN SETTINGS */
 body {
-    font-family: 'PT Sans', sans-serif;
+    font-family: 'PT Sans', Arial, sans-serif;
     font-size: 14px;
-    line-height: 24px;
+    line-height: 21px;
     text-transform: uppercase;
     color: #000000;
 }
@@ -366,6 +366,7 @@ footer {
 .features_row_bottom {
     width: 100%;
     background-color: #eeeeee;
+    padding-bottom: 50px;
 }
 .features_item {
     float: left;
@@ -384,6 +385,11 @@ footer {
 }
 .features_item h2 {
     font-size: 21px;
+}
+.features_description {
+    padding-right: 15%;
+    padding-left: 15%;
+    margin-bottom: 50px;
 }
 /* END FEATURES */
 
@@ -645,7 +651,7 @@ a.show_result_button {
 .otstup {
     margin-left: 3%;
 }
-.range-controls {
+.range_controls {
     position: relative;
     width: 215px;
     height: 22px;
@@ -654,16 +660,16 @@ a.show_result_button {
     margin-bottom: 15px;
     border-radius: 5px;
 }
-.range-controls .scale {
+.range_controls .scale {
     height: 2px;
     background: rgba(215, 220, 222, .3);
 }
-.range-controls .bar {
+.range_controls .bar {
     width: 70%;
     height: 2px;
     background: #ffffff;
 }
-.range-controls .toggle {
+.range_controls .toggle {
     position: absolute;
     top: 10px;
     left: 0px;
@@ -675,13 +681,13 @@ a.show_result_button {
     background: #ababab;
     box-shadow: 0 2px 1px 0 #cfcfcf;
 }
-.range-controls .toggle:hover {
+.range_controls .toggle:hover {
     background: #1c4f80;
 }
-.range-controls .toggle-min {
+.range_controls .toggle_min {
     left: 0px;
 }
-.range-controls .toggle-max {
+.range_controls .toggle_max {
     left: 156px;
 }
 @media (max-width: 990px) {
@@ -759,7 +765,7 @@ a.act {
 /* END SORTING */
 
 /* RESULT */
-.single-line {
+.single_line {
     border-top: 1px solid #d7d7d7;
     margin: 30px 0;
 }
@@ -805,18 +811,20 @@ p.hotel_type  {
 }
 p.cost {
     display: inline-block;
-    margin-top: 5px;
+    margin-top: 10px;
     margin-right: 3px;
     margin-bottom: 10px;
 }
 a.button_detail  {
     display: inline-block;
     height: 23px;
-    width: 110px;
+    width: 80px;
+    padding-left: 15px;
+    padding-right: 15px;
     margin-right: 5px;
     padding-top: 4px;
     text-align: center;
-    font-size: 10px;
+    font-size: 14px;
     background-color: #81b3d2;
     color: #ffffff;
     text-decoration: none;
@@ -831,10 +839,11 @@ a.button_detail:active {
 a.button_book {
     display: inline-block;
     height: 23px;
-    width: 110px;
+    padding-left: 15px;
+    padding-right: 15px;
     text-align: center;
     padding-top: 4px;
-    font-size: 10px;
+    font-size: 14px;
     background-color: #766357;
     color: #ffffff;
     text-decoration: none;
@@ -851,13 +860,12 @@ a.button_book:active {
     vertical-align: top;
 }
 .stars {
-    margin-bottom: 36px;
+    margin-bottom: 39px;
     text-align: right;
     margin-right: 0;
-}
-.fa-star {
     color: #81b3d2;
 }
+
 .hotel_ratings span{
     display: inline-block;
     height: 24px;
