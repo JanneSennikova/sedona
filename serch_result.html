@@ -11,7 +11,7 @@
 <body>
 <div class="centrovsik">
 <header>
-    <div class="intro_search clearfix">
+      <div class="container clearfix">
         <div class="navi clearfix">
             <nav class="lef_navigation">
                 <ul>
@@ -37,9 +37,11 @@
                 </ul>
             </nav>
         </div>
+      </div>
+    <div class="intro_search clearfix">
         <div class="search">
-            <form class="search_form" name="search_form">
-        <fieldset class="otstup">
+            <form class="search_form  clearfix" name="search_form">
+        <fieldset>
             <legend>Инфраструктура:</legend>
             <ul>
                 <li>
@@ -67,11 +69,11 @@
                 </li>
             </ul>
         </fieldset>
-        <fieldset>
+        <fieldset class="otstup">
             <legend>Стоимость в сутки (р):</legend>
             <div class="cost_form">
                 <label for="from">От:</label><input type="number" id="from" value="0" class="bord">
-                <label for="to">До:</label><input type="number" id="to" value="3000">
+                <label class="to" for="to">До:</label><input type="number" id="to" value="3000">
             </div>
                 <div class="range_controls">
                     <div class="scale">
@@ -83,7 +85,7 @@
             <a href="#" class="show_result_button">Показать</a>
         </fieldset>
     </form></div>
-        </div>
+
 </header>
 
 <main class="container">
@@ -91,7 +93,7 @@
         <strong>Найдено: 3</strong>
         <div  class="sorting">
             <ul>
-                <title>Сортировка:</title>
+                <li>Сортировка:</li>
                 <li>
                     <a  href="#" class="active">По цене</a>
                 </li>
@@ -159,7 +161,7 @@
                     <i class="icon_star"></i>
                     <i class="icon_star"></i>
                 </div>
-                <span>Рейтинг: 8,5</span>
+                <span>Рейтинг: 8,9</span>
             </div>
         </article>
         <div class="single_line"></div>
@@ -184,10 +186,10 @@
                     <i class="icon_star"></i>
                     <i class="icon_star"></i>
                 </div>
-                <span>Рейтинг: 8,5</span>
+                <span>Рейтинг: 9,2</span>
             </div>
         </article>
-        <div class="single_line"></div>
+        <div class="single_line_last"></div>
 </main>
 
 <footer>
